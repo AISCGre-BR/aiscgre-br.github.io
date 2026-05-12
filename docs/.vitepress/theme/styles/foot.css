@@ -11,8 +11,10 @@
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: var(--s-5);
-  align-items: end;
+  align-items: start;
 }
+.foot__brand { padding-top: 0.15rem; }
+.foot__colophon { align-self: end; }
 
 .foot__brand { display: flex; align-items: center; gap: 0.8rem; }
 .foot__brand img { width: 44px; height: 44px; }
