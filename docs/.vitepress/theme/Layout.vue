@@ -65,6 +65,10 @@ watch(() => route.path, () => { menuOpen.value = false })
             <strong>AISCGre — Seção Brasileira</strong><br/>
             <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">aiscgre.org</a>
           </p>
+          <p class="foot__legal">
+            ASSOCIACAO INTERNACIONAL DE ESTUDOS DE CANTO GREGORIANO SECAO BRASILEIRA<br/>
+            CNPJ <span style="font-variant-numeric: tabular-nums;">66.227.956/0001-39</span> · Matriz
+          </p>
           <p class="foot__credits">
             Imagem do Codex Einsiedeln 121, p. 30:
             <a href="https://www.e-codices.unifr.ch/en/sbe/0121/30" target="_blank" rel="noopener">Stiftsbibliothek Einsiedeln / e-codices</a>,
