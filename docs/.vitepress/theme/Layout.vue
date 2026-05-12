@@ -66,7 +66,7 @@ watch(() => route.path, () => { menuOpen.value = false })
             <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">aiscgre.org</a>
           </p>
           <p class="foot__legal">
-            Associação Internacional de Estudos de Canto Gregoriano — Seção Brasileira<br/>
+            ASSOCIACAO INTERNACIONAL DE ESTUDOS DE CANTO GREGORIANO SECAO BRASILEIRA<br/>
             CNPJ <span style="font-variant-numeric: tabular-nums;">66.227.956/0001-39</span> · Matriz
           </p>
           <p class="foot__credits">
