@@ -15,11 +15,18 @@ watch(() => route.path, () => { menuOpen.value = false })
 
 <template>
   <div class="site">
+    <a class="topbar" href="#congresso">
+      <span class="topbar__tag">Congresso</span>
+      <span class="topbar__text">1.º Congresso Internacional de Coros Litúrgicos · 28–30 de agosto de 2026, Campinas</span>
+      <span class="topbar__text topbar__text--short">Congresso de Coros Litúrgicos · 28–30 ago 2026</span>
+      <span class="topbar__cta">Saiba mais →</span>
+    </a>
+
     <header class="nav" role="banner">
       <div class="nav__inner">
         <a class="brand" href="/" aria-label="AISCGre — Seção Brasileira, início">
           <img class="brand__mark" :src="iconUrl" alt="" />
-          <span class="brand__name">AISCGre<small>Seção Brasileira</small></span>
+          <span class="brand__name">AISCGre<span class="brand__suffix">&nbsp;Brasil</span><small>Seção Brasileira</small></span>
         </a>
 
         <button
@@ -39,6 +46,7 @@ watch(() => route.path, () => { menuOpen.value = false })
 
         <nav aria-label="principal">
           <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }" @click="menuOpen = false">
+            <li><a href="#congresso">Congresso</a></li>
             <li><a href="#aiscgre">AISCGre</a></li>
             <li><a href="#fundamentos">Fundamentos</a></li>
             <li><a href="#secao-brasileira">Seção Brasileira</a></li>
