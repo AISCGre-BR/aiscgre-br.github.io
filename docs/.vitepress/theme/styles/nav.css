@@ -50,6 +50,8 @@
   margin-top: 0.15rem;
 }
 
+.brand__suffix { display: none; }
+
 .nav__toggle {
   display: none;
   background: none;
@@ -99,6 +101,7 @@
     gap: var(--s-3);
   }
   .brand__name small { display: none; }
+  .brand__suffix { display: inline; }
 
   .nav__toggle { display: block; }
 

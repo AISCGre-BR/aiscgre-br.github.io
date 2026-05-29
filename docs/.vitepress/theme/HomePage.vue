@@ -7,6 +7,9 @@ const photoWebp = withBase('/photos/diretoria-conselho.webp')
 const heroJpg = withBase('/photos/manuscrito-e121.jpg')
 const heroWebp = withBase('/photos/manuscrito-e121.webp')
 
+const frisinaJpg = withBase('/photos/frisina.jpg')
+const frisinaWebp = withBase('/photos/frisina.webp')
+
 const formIndividual = 'https://forms.gle/e5MoEySuPeh2vAAC7'
 const formCoros = 'https://forms.gle/Ejf5At9vzqDzZQH27'
 </script>
@@ -38,6 +41,44 @@ const formCoros = 'https://forms.gle/Ejf5At9vzqDzZQH27'
         </div>
         <figcaption class="plate__caption">
           Intróito <em>Puer natus</em> no Codex Einsiedeln 121
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BANNER: CONGRESSO -->
+  <section class="congress" id="congresso" aria-labelledby="congress-title">
+    <div class="congress__inner">
+      <div class="congress__text">
+        <p class="congress__kicker">Congresso · Agosto de 2026</p>
+        <h2 class="congress__title" id="congress-title">1.º Congresso Internacional de Coros Litúrgicos</h2>
+        <p class="congress__motto"><em>Cantate Domino canticum novum</em></p>
+
+        <dl class="congress__meta">
+          <div>
+            <dt>Datas</dt>
+            <dd>28 a 30 de agosto de 2026</dd>
+          </div>
+          <div>
+            <dt>Local</dt>
+            <dd>Campinas · SP · Brasil</dd>
+          </div>
+        </dl>
+
+        <a class="congress__cta" href="https://congressosmusicais.com.br/" target="_blank" rel="noopener">Garanta sua vaga</a>
+      </div>
+
+      <figure class="congress__speaker">
+        <div class="congress__portrait">
+          <picture>
+            <source :srcset="frisinaWebp" type="image/webp" />
+            <img :src="frisinaJpg" alt="Monsenhor Marco Frisina." loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          <span class="congress__speaker-label">Palestrante principal</span>
+          <strong>Mons. Marco Frisina</strong>
+          Compositor e Maestro do Coro da Diocese de Roma
         </figcaption>
       </figure>
     </div>
