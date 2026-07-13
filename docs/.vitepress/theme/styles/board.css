@@ -1,0 +1,64 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s-5);
+  margin-top: var(--s-7);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--rule);
+}
+@media (max-width: 900px) {
+  .board { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .board { grid-template-columns: 1fr; gap: var(--s-5); }
+}
+.board__title {
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  color: var(--rubric);
+  font-weight: 560;
+  margin: 0 0 var(--s-3);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.board__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px; height: 6px;
+  background: var(--rubric);
+}
+.roster {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.roster__row {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.roster__row:last-child { border-bottom: none; }
+.roster dt {
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.roster dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 440;
+}
+.roster--list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  color: var(--ink);
+  font-weight: 440;
+}
+.roster--list li:last-child { border-bottom: none; }

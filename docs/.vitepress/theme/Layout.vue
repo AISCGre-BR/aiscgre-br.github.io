@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useData, useRoute, withBase, Content } from 'vitepress'
-import HomePage from './HomePage.vue'
 
 const { frontmatter } = useData()
 const route = useRoute()
@@ -57,7 +56,7 @@ watch(() => route.path, () => { menuOpen.value = false })
     </header>
 
     <main>
-      <HomePage v-if="isHome" />
+      <Content v-if="isHome" />
       <div v-else class="article">
         <Content />
       </div>
