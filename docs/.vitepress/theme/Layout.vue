@@ -50,6 +50,7 @@ watch(() => route.path, () => { menuOpen.value = false })
             <li><a href="#fundamentos">Fundamentos</a></li>
             <li><a href="#secao-brasileira">Seção Brasileira</a></li>
             <li><a href="#pessoa-fisica">Associe-se</a></li>
+            <li><a href="#estatuto">Estatuto</a></li>
           </ul>
         </nav>
       </div>

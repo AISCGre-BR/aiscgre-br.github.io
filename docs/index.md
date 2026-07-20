@@ -68,6 +68,14 @@ board:
 forms:
   individual: "https://forms.gle/e5MoEySuPeh2vAAC7"
   coros: "https://forms.gle/Ejf5At9vzqDzZQH27"
+
+estatuto:
+  file: /documentos/estatuto-social-aiscgre-brasil.pdf
+  title: "Estatuto Social da AISCGre — Seção Brasileira"
+  meta: "PDF · 13 páginas"
+  cover:
+    jpg: /documentos/estatuto-capa.jpg
+    webp: /documentos/estatuto-capa.webp
 ---
 
 <!-- HERO -->
@@ -184,5 +192,21 @@ Grupos que promovem ou incluem o canto gregoriano em seu repertório, mantendo v
 </PairGrid>
 
 <p style="margin-top: var(--s-5);"><a class="cta" :href="$frontmatter.forms.coros" target="_blank" rel="noopener">Formulário para Coros e Instituições</a></p>
+
+</HomeSection>
+
+<!-- ESTATUTO SOCIAL -->
+<HomeSection id="estatuto" label="Estatuto Social" alt>
+
+## O documento que rege a Seção Brasileira.
+
+O Estatuto Social define a finalidade, a composição do quadro associativo, a estrutura de governança e o regime patrimonial da AISCGre — Seção Brasileira. Sua leitura é recomendada a todos os que pretendem associar-se.
+
+<DocumentEmbed
+  :file="$frontmatter.estatuto.file"
+  :title="$frontmatter.estatuto.title"
+  :meta="$frontmatter.estatuto.meta"
+  :cover="$frontmatter.estatuto.cover"
+/>
 
 </HomeSection>

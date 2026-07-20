@@ -1,0 +1,129 @@
+.doc { margin: var(--s-6) 0 0; }
+
+/* ─── Leitor embutido (desktop) ─────────────────────────────────────── */
+
+.doc__frame {
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+}
+
+.doc__viewer {
+  display: block;
+  width: 100%;
+  height: min(78vh, 46rem);
+  border: 0;
+  background: var(--surface);
+}
+
+/* ─── Capa (mobile) ─────────────────────────────────────────────────── */
+
+/* Navegadores móveis não renderizam PDF em iframe de forma confiável —
+   abaixo de 780px o documento é apresentado como capa que abre o leitor
+   nativo do sistema, onde a leitura com zoom é de fato melhor. */
+.doc__card { display: none; }
+
+@media (max-width: 780px) {
+  .doc__frame { display: none; }
+
+  .doc__card {
+    display: block;
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 200ms ease, transform 200ms ease;
+  }
+
+  .doc__card:active { transform: scale(0.995); border-color: var(--rubric); }
+
+  .doc__preview {
+    display: block;
+    position: relative;
+    max-height: 42vh;
+    overflow: hidden;
+  }
+
+  .doc__preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Esmaecimento inferior: sinaliza que a página continua. */
+  .doc__preview::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 45%;
+    background: linear-gradient(to bottom, rgba(253, 252, 249, 0), var(--surface) 88%);
+  }
+
+  .doc__body {
+    display: block;
+    position: relative;
+    padding: var(--s-4);
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .doc__kicker {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rubric);
+    font-weight: 560;
+    margin-bottom: var(--s-2);
+  }
+
+  .doc__title {
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    color: var(--ink);
+    margin-bottom: var(--s-3);
+  }
+
+  .doc__open {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-size: 0.98rem;
+    font-weight: 540;
+    color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 0.2rem;
+  }
+
+  .doc__open::after { content: "\2192"; color: var(--rubric); }
+
+  /* A capa já cumpre o papel de "abrir"; resta o download. */
+  .doc__desktop-only { display: none; }
+  .doc__info { display: none; }
+  .doc__meta { justify-content: flex-start; }
+}
+
+/* ─── Legenda ───────────────────────────────────────────────────────── */
+
+.doc__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-3) var(--s-5);
+  margin-top: var(--s-3);
+}
+
+.doc__info {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.doc__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-5);
+}
