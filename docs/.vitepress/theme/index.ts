@@ -8,6 +8,7 @@ import PairItem from './components/PairItem.vue'
 import CitationBlock from './components/CitationBlock.vue'
 import PhotoFigure from './components/PhotoFigure.vue'
 import BoardRoster from './components/BoardRoster.vue'
+import DocumentEmbed from './components/DocumentEmbed.vue'
 import './styles/index.css'
 
 export default {
@@ -22,5 +23,6 @@ export default {
     app.component('CitationBlock', CitationBlock)
     app.component('PhotoFigure', PhotoFigure)
     app.component('BoardRoster', BoardRoster)
+    app.component('DocumentEmbed', DocumentEmbed)
   }
 }
