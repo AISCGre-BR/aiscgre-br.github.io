@@ -8,26 +8,32 @@ hero:
     webp: /photos/manuscrito-e121.webp
     alt: "Inicial P historiada em ouro e vermelho abrindo o introito Puer natus est nobis, no Codex Einsiedeln 121."
 
-congress:
-  kicker: "Congresso · Agosto de 2026"
-  title: "1.º Congresso Internacional de Coros Litúrgicos"
-  motto: "Cantate Domino canticum novum"
+event:
+  kicker: "Curso · Janeiro de 2027"
+  title: "Laudis Canticum"
+  logo: /photos/laudis-logo.png
+  subtitle: "5.º Curso Internacional de Canto Gregoriano"
   meta:
     - term: Datas
-      detail: "28 a 30 de agosto de 2026"
+      detail: "7 a 10 de janeiro de 2027"
     - term: Local
       detail: "Campinas · SP · Brasil"
+    - term: Direção
+      detail: "Prof. Dr. Clayton Júnior Dias"
+    - term: Realização
+      detail: "AISCGre Brasil e CEMULC"
+    - term: Apoio
+      detail:
+        - "Faculdade de São Bento do Rio de Janeiro"
+        - "Pontifício Ateneu Santo Anselmo (Roma)"
+        - "Arquidiocese de Campinas"
   cta:
-    text: "Garanta sua vaga"
-    url: "https://congressosmusicais.com.br/"
-  speaker:
-    image:
-      jpg: /photos/frisina.jpg
-      webp: /photos/frisina.webp
-      alt: "Monsenhor Marco Frisina."
-    label: "Palestrante principal"
-    name: "Mons. Marco Frisina"
-    role: "Compositor e Maestro do Coro da Diocese de Roma"
+    text: "Inscreva-se"
+    url: "https://app.ciaticket.com.br/e/LAUDISCANTICUM2027"
+  image:
+    jpg: /photos/laudis-iluminura.jpg
+    webp: /photos/laudis-iluminura.webp
+    alt: "Iluminura: cantores erguem os olhos e as mãos para um céu estrelado."
 
 photo:
   image:
@@ -90,8 +96,8 @@ estatuto:
   <template #caption>Intróito <em>Puer natus</em> no Codex Einsiedeln 121</template>
 </HomeHero>
 
-<!-- BANNER: CONGRESSO -->
-<CongressBanner :congress="$frontmatter.congress" />
+<!-- BANNER: EVENTO -->
+<EventBanner :event="$frontmatter.event" />
 
 <!-- O QUE É A AISCGRE -->
 <HomeSection id="aiscgre" label="A AISCGre">
