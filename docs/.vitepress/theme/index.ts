@@ -1,6 +1,6 @@
 import Layout from './Layout.vue'
 import HomeHero from './components/HomeHero.vue'
-import CongressBanner from './components/CongressBanner.vue'
+import EventBanner from './components/EventBanner.vue'
 import HomeSection from './components/HomeSection.vue'
 import ThresholdQuote from './components/ThresholdQuote.vue'
 import PairGrid from './components/PairGrid.vue'
@@ -15,7 +15,7 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.component('HomeHero', HomeHero)
-    app.component('CongressBanner', CongressBanner)
+    app.component('EventBanner', EventBanner)
     app.component('HomeSection', HomeSection)
     app.component('ThresholdQuote', ThresholdQuote)
     app.component('PairGrid', PairGrid)

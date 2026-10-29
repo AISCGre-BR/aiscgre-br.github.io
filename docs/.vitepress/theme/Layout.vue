@@ -14,10 +14,10 @@ watch(() => route.path, () => { menuOpen.value = false })
 
 <template>
   <div class="site">
-    <a class="topbar" href="#congresso">
-      <span class="topbar__tag">Congresso</span>
-      <span class="topbar__text">1.º Congresso Internacional de Coros Litúrgicos · 28–30 de agosto de 2026, Campinas</span>
-      <span class="topbar__text topbar__text--short">Congresso de Coros Litúrgicos · 28–30 ago 2026</span>
+    <a class="topbar" href="#evento">
+      <span class="topbar__tag">Inscrições abertas</span>
+      <span class="topbar__text">Laudis Canticum · 5.º Curso Internacional de Canto Gregoriano · 7–10 de janeiro de 2027, Campinas</span>
+      <span class="topbar__text topbar__text--short">Laudis Canticum · 7–10 jan 2027</span>
       <span class="topbar__cta">Saiba mais →</span>
     </a>
 
@@ -45,7 +45,7 @@ watch(() => route.path, () => { menuOpen.value = false })
 
         <nav aria-label="principal">
           <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }" @click="menuOpen = false">
-            <li><a href="#congresso">Congresso</a></li>
+            <li><a href="#evento">Laudis Canticum</a></li>
             <li><a href="#aiscgre">AISCGre</a></li>
             <li><a href="#fundamentos">Fundamentos</a></li>
             <li><a href="#secao-brasileira">Seção Brasileira</a></li>
